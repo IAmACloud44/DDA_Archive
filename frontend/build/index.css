@@ -1,0 +1,295 @@
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  color: aliceblue;
+}
+
+/* main */
+body {
+  font-family: 'Courier New', Courier, monospace; 
+  background-image: url('./glitch.gif'); 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+}
+.return {
+  text-align: center;
+  padding: 10px;
+  color: aliceblue;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/*nav*/
+.navbar a:link {
+  color: aliceblue;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 30px;
+}
+a:visited {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: rgb(10, 10, 10, 0.75) ;
+  text-decoration: none;
+}
+.navbar a.active {
+  background-color:rgb(18, 18, 18, 0.8);
+  text-decoration: none;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.navbar a:first-child{
+  margin-left: 20px;
+}
+.navbar {
+  top: 0;
+  font-size: large;
+  background-color: rgb(0, 0, 0, 0.5);  
+  margin: auto; 
+  width: auto;
+  overflow: hidden;
+}
+
+.navbar input[type=text] {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 25px;
+  border: none;
+  font-size: 18px;
+  color: rgb(236, 236, 236);
+  background-color: rgb(49, 49, 49);
+}
+
+.navbar input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar .searchbar button {
+  float: right;
+  padding: 6px 10px;
+  margin-right: 20px;
+  margin-top: 25px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(85, 85, 85);
+}
+
+@media screen and (max-width: 110vh) {
+  .navbar .searchbar {
+      float: none;
+  }
+  .navbar a, .navbar input[type=text], .navbar .searchbar button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+  }
+  .navbar input[type=text] {
+      border: none;  
+  }
+  .navbar a:first-child {
+      margin: 0px;
+  }
+}
+
+/* footer */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+a.fa  {
+  color: aliceblue;
+  padding: 20px;
+  width: 20px;
+  margin-inline: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.vl{
+  border-left: 1px solid rgb(255, 255, 255);
+  height: 20px;
+}
+
+/* textbox_standard */
+.textbox{
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: black;
+  color: azure;
+  padding: 10px;
+  text-align: center;
+}
+
+/* index.html */
+.news{
+  color: aliceblue;
+  background-color: rgb(33, 33, 33);
+}
+.news p{
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+.newsgif{
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  margin-bottom: -10px;
+}
+
+.homebox{
+  margin: 10px 20px;
+}
+
+.homebox:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.welcome_main{
+  margin-left: 50px;
+  float: left;
+  width: 65%;
+  background-color: black;
+  color: azure;
+  padding: 10px;
+  text-align: center;
+  min-width: 400px;
+}
+.welcome_main img{
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 300px;
+  margin-top: 10px;
+}
+.welcome_main p{
+  padding: 20px;
+  text-align: justify;
+  margin-left: 80px;
+  margin-right: 80px;
+  line-height: 1.5;
+}
+
+.welcome_main a{
+  color: rgb(182, 182, 182);
+}
+
+.welcome_menu {
+  float: left;
+  width: 20%;
+  background-color: rgb(49, 49, 49);
+  color: azure;
+  padding: 10px;
+  min-width: 400px;
+  margin-bottom: 50px;
+}
+
+.welcome_menu h1 {
+  margin-left: 10px;
+}
+
+.welcome_menu li {
+  margin-left: 20px;
+}
+
+.welcome_menu li :hover{
+  color: rgb(188, 188, 188);
+}
+
+/* contents */
+.textbox img{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  max-width: 600px;
+}
+.textbox hr, hr{
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+table{
+  text-align: left;
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* forums */
+.container {
+  display: flex;
+  width: 100%; 
+  margin-top: 10px;
+}
+.left {
+  background-color: rgb(66, 66, 66);
+  width: 20%; 
+  max-height: 60vh; 
+  padding: 10px;
+  margin-left: 50px;
+  overflow: auto;
+}
+.right {
+  background-color: rgb(17, 17, 17);
+  color: aliceblue;
+  width: 80%; 
+  height: 70vh; 
+  padding: 10px 20px;
+  margin-left:10px;
+  margin-right: 50px;
+  overflow: auto;
+}
+
+.left button{
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(90, 103, 115, 0)
+}
+
+@media screen and (max-width: 110vh) {
+  .container {
+      float: none;
+      display: block;
+  }
+  .left {
+      width: auto;
+      margin-inline: 50px;
+  }
+  .right {
+    width: auto;
+    margin-inline: 50px;
+    margin-top: 10px;
+  }
+}
+
+
