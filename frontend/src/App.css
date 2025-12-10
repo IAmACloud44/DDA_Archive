@@ -1,0 +1,107 @@
+.App {
+  max-width: 600vh;
+  padding: 20px; 
+}
+
+.App input {
+  display: block;
+  width: 80%;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: rgb(167, 167, 167, 0);
+  color: aliceblue;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.forumtextbox {
+  background-color: black;
+  text-align: center;
+}
+
+.ForumContent{
+  background-color: rgb(104, 104, 104);
+  padding: 15px 18px;
+  border-radius: 5px;
+}
+
+.comsec{
+  margin-left: 50px;
+}
+
+.welcomeforum li{
+  margin-left: 40px;
+  list-style: none;
+}
+
+.App hr{
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.App button {
+  display: inline;
+  padding: 10px 20px;
+  border: none;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: rgb(54, 55, 56);
+  color: aliceblue;
+  cursor: pointer;
+
+}
+
+/* comment wrapping */
+.comment {
+  max-width: 80%;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.post button{
+  padding: 5px;
+  border: none;
+  background-color: rgb(54, 55, 56);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/* buttons for the comment */
+.commentbox{
+  display: flex;
+  overflow: auto;
+}
+
+/* Add comment box */
+.input-box {
+  width: 80%;
+  box-sizing: border-box;
+  word-wrap: break-word; 
+  word-break: break-all; 
+  white-space: pre-wrap; 
+  overflow: hidden; 
+  resize: none; 
+  min-height: 50px; 
+  line-height: 1.5; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.username {
+  margin-top: 0;
+  border-radius: 5px;
+}
