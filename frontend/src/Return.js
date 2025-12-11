@@ -1,7 +1,9 @@
 export default function Return() {
     return (
         <div class="return">
-            <a href=" /#">---[go up]---</a>
+            <button onClick={() => window.scrollTo({ top: 0 })}>
+                ---[go up]---
+            </button>
         </div>
     );
 }

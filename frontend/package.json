@@ -15,8 +15,7 @@
     "web-vitals": "^2.1.4",
     "webpack": "^5.61.0"
   },
-
-  "homepage": "https://IAmACloud44.github.io/DDA_Archive",
+  "homepage": "https://iamacloud44.github.io/DDA_Archive",
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",

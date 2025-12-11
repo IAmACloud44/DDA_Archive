@@ -1,6 +1,7 @@
 import React from 'react';
 import Return from './Return.js';
 import Footer from './Footer.js';
+import { Link } from 'react-router-dom';
 
 function Contents() {
   return (
@@ -9,9 +10,9 @@ function Contents() {
       <h1>---[Newest Additions]---</h1>
       <h2>Brownsberry Incident</h2>
       <hr />
-      <a href="./contents">Newscast of '56</a>
+      <a href="#/contents" onClick={() => window.location.reload()}>Newscast of '56</a>
       <br />
-      <a href="./contents">Police Records</a>
+      <a href="#/contents" onClick={() => window.location.reload()}>Police Records</a>
       <br />
       <br />
       <div className="textbox">
@@ -19,11 +20,11 @@ function Contents() {
         <table>
           <tr>
             <td>Brownsberry Incident:</td>
-            <td><a href="./contents">Newscast of '56</a></td>
+            <td><a href="#/contents" onClick={() => window.location.reload()}>Newscast of '56</a></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
-            <td><a href="./contents">Police Records</a></td>
+            <td><a href="#/contents" onClick={() => window.location.reload()}>Police Records</a></td>
           </tr>
         </table>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Return from './Return';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -17,7 +18,7 @@ function Home() {
                 <section className="welcome_menu">
                     <h1>New Additions</h1>
                         <ul>
-                            <li><a href='/Contents'>Brownsberry Incident</a></li>
+                            <li><Link to="/contents">Brownsberry Incident</Link></li>
                         </ul>
                 </section>
                 <section className="welcome_main">
@@ -27,7 +28,7 @@ function Home() {
                         Here at the DDA, we preserve various crazy stories found all over the world! From mysterious sightings to
                         unsolved cases aired as public media, then subsequently forgotten due to time; all of them have a place to
                         stay and remain in the spotlight at the DDA! We try to collect stories in full and never leave out any
-                        interesting parts! This results in a huge <a href="/contents">library</a> filled with videos, audios,
+                        interesting parts! This results in a huge <Link to="/contents">library</Link> filled with videos, audios,
                         newspaper clippings and pictures already storing history reaching as far back as to the year 1929.
                         <br />
                         <br />
