@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.css": "/DDA_Archive/static/css/main.378afa6f.css",
-    "main.js": "/DDA_Archive/static/js/main.13d5f0c0.js",
+    "main.js": "/DDA_Archive/static/js/main.c4ca45f7.js",
     "index.html": "/DDA_Archive/index.html",
-    "main.378afa6f.css.map": "/DDA_Archive/static/css/main.378afa6f.css.map",
-    "main.13d5f0c0.js.map": "/DDA_Archive/static/js/main.13d5f0c0.js.map"
+    "main.c4ca45f7.js.map": "/DDA_Archive/static/js/main.c4ca45f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.378afa6f.css",
-    "static/js/main.13d5f0c0.js"
+    "static/js/main.c4ca45f7.js"
   ]
 }
