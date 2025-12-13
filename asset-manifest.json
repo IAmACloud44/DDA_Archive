@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/DDA_Archive/static/js/main.1e9023b9.js",
+    "main.js": "/DDA_Archive/static/js/main.bd18f370.js",
+    "static/media/brown.mp4": "/DDA_Archive/static/media/brown.83832be37e8bf84f83e9.mp4",
     "index.html": "/DDA_Archive/index.html",
-    "main.1e9023b9.js.map": "/DDA_Archive/static/js/main.1e9023b9.js.map"
+    "main.bd18f370.js.map": "/DDA_Archive/static/js/main.bd18f370.js.map"
   },
   "entrypoints": [
-    "static/js/main.1e9023b9.js"
+    "static/js/main.bd18f370.js"
   ]
 }
