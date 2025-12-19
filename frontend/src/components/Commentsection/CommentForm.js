@@ -22,14 +22,14 @@ const CommentForm = ({ addComment }) => {
 
 
 // Just the action of POST to tie it together with the user_id from my SQL table
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (comment && userId) {
-      addComment({ user_id: userId, comment });
-      setComment('');
-      setUserId('');
-    }
-  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (comment && userId) {
+  //     addComment({ user_id: userId, comment });
+  //     setComment('');
+  //     setUserId('');
+  //   }
+  // };
 
   const filler = (event) => {
     event.preventDefault();
@@ -45,7 +45,7 @@ const CommentForm = ({ addComment }) => {
             {user.name}
           </option>
         ))}
-      </select> */}
+      </select> */} 
       <div className='commentbox'>
       <input
         maxLength={500}

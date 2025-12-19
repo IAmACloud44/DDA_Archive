@@ -1,17 +1,17 @@
 import React from 'react';
-import Return from './Return';
-import Footer from './Footer';
+import Return from '../components/Return';
+import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
 function Home() {
     return (
         <div>
             <div className="news">
-                <img className="newsgif" src='./news.gif' alt="" />
+                <img className="newsgif" src={process.env.PUBLIC_URL + '/news.gif'} alt="" />
                 <p>The Forum will be fully transferred from the old site! 
                     <br></br>
                 The login system has not been implemented yet, please wait :)</p>
-                <img className="newsgif" src='./news.gif' alt="" />
+                <img className="newsgif" src={process.env.PUBLIC_URL + '/news.gif'} alt="" />
             </div>
             <br/>
             <div className='homebox'>
@@ -23,7 +23,7 @@ function Home() {
                 </section>
                 <section className="welcome_main">
                     <h1>Welcome to the DarkDragonArchives!</h1>
-                    <img src='./dragondeeznuts.png' alt="" />
+                    <img src={process.env.PUBLIC_URL + '/dragondeeznuts.png'}  alt="" />
                     <p>
                         Here at the DDA, we preserve various crazy stories found all over the world! From mysterious sightings to
                         unsolved cases aired as public media, then subsequently forgotten due to time; all of them have a place to
@@ -46,9 +46,7 @@ function Home() {
                 </section>
             </div>
             <Return />
-            <div className='wrapper'>
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 }

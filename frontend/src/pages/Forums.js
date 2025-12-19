@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import App from './App';
-import Footer from './Footer';
-import ForumWelcome from './ForumWelcome';
+import App from '../components/Commentsection/App';
+import Footer from '../components/Footer';
+import ForumWelcome from '../components/Commentsection/ForumWelcome';
+
 
 // The Forums start with a News Site before you go to the actual forums conatined in the right hand side menu
 function Forums() {
@@ -49,9 +50,7 @@ function Forums() {
                     {/* {currentContent === 'event2'&& <p>Event2</p>} */}
                 </div>
             </div>
-            <div className='wrapper'>
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 }

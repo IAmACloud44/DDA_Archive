@@ -1,6 +1,6 @@
 export default function Return() {
     return (
-        <div class="return">
+        <div className="return">
             <button onClick={() => window.scrollTo({ top: 0 })}>
                 ---[go up]---
             </button>

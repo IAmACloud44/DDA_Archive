@@ -1,27 +1,45 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
+import {createRoot} from 'react-dom/client';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
-import Navbar from './Navbar';
-import Contents from './Contents';
-import Forums from './Forums';
-import Home from './Home';
+import Navbar from './components/Navbar';
+import Contents from './pages/Contents';
+import Forums from './pages/Forums';
+import Home from './pages/Home';
+import Goat from './pages/Goat';
+import Brownsberry from './pages/Brownsberry';
 
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-ReactDOM.render(
+// FOR FUTURE HIDDEN PAGES
+const hiddenNavbarRoutes = ["/goat", "/future1", "/future2"];
+
+function Layout({ children }) {
+  const location = useLocation();
+  const hideNavbar = hiddenNavbarRoutes.includes(location.pathname);
+  return (
+    <div>
+      {!hideNavbar && <Navbar />}
+      {children}
+    </div>
+  );
+}
+
+root.render(
   <React.StrictMode>
     <Router>
-      <div>
-        <Navbar />
+      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contents" element={<Contents />} />
           <Route path="/forums" element={<Forums />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/goat" element={<Goat />} />
+          <Route path="/brownsberrycounty" element={<Brownsberry />} />
+          {/* FOR NEW ROUTHES ADD HERE */}
+          {/* <Route path="*" element={<Home />} /> */}
         </Routes>
-      </div>
+      </Layout>
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
 );

@@ -24,7 +24,7 @@ const CommentSection = ({ comments, deleteComment, updateComment }) => {
         <div key={comment.comment_id} style={{ marginBottom: '10px' }}>
           <br/>
           <strong>{comment.user_name} </strong>
-          {/* <small>{new Date(comment.timestamp).toLocaleString()}</small> */}
+          <small>{new Date(comment.timestamp).toLocaleString()}</small>
           {editingCommentId === comment.comment_id ? (
             <div>
               <input
@@ -38,8 +38,8 @@ const CommentSection = ({ comments, deleteComment, updateComment }) => {
             <>
               <p className='comment'>{comment.comment}</p>
               <div className='commentbuttons'>
-              <button onClick={() => handleEditClick(comment.comment_id, comment.comment)}>Edit</button>
-              <button onClick={() => deleteComment(comment.comment_id)}>Delete</button>
+              {/* <button onClick={() => handleEditClick(comment.comment_id, comment.comment)}>Edit</button>
+              <button onClick={() => deleteComment(comment.comment_id)}>Delete</button> */}
               </div>
             </>
           )}

@@ -3,7 +3,6 @@ import React from 'react';
 function ForumWelcome() {
   return (
     <div>
-        
         <h1>Welcome to the Forums!!</h1>
         <section className='welcomeforum'>
             <p>Here you find the past forums from our old site! Do take a look around and find theories, conspiracies and other people you like!</p>
@@ -14,9 +13,9 @@ function ForumWelcome() {
         </section> 
             <hr/>
         <div className='news'>
-            <img className="newsgif" src='./news.gif' alt="" />
+            <img className="newsgif" src={process.env.PUBLIC_URL + '/news.gif'}  alt="" />
             <p className='news'>Under construction</p>
-            <img className="newsgif" src='./news.gif' alt="" />
+            <img className="newsgif" src={process.env.PUBLIC_URL + '/news.gif'}  alt="" />
         </div>
     </div>
   );

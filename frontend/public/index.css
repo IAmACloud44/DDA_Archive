@@ -1,5 +1,5 @@
 .App {
-  max-width: 600px;
+  max-width: 600vh;
   margin: 0 auto;
   padding: 20px;
   color: aliceblue;
@@ -13,6 +13,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: black;
+  color: aliceblue;
 }
 a {
   text-decoration: none;
@@ -92,23 +93,22 @@ a:visited {
   background-color: rgb(85, 85, 85);
 }
 
-@media screen and (max-width: 110vh) {
-  .navbar .searchbar {
-      float: none;
+@media screen and (max-width: 120vh) {
+  .navbar {
+    padding-top: 30px;
+    padding-bottom: 14px;
   }
-  .navbar a, .navbar input[type=text], .navbar .searchbar button {
+  .navbar a {
       float: none;
-      display: block;
+      display: inline;
       text-align: left;
-      width: 100%;
       margin: 0;
       padding: 14px;
   }
-  .navbar input[type=text] {
-      border: none;  
-  }
-  .navbar a:first-child {
-      margin: 0px;
+  .searchbar {
+    float: none;
+    display: inline;
+    padding: 14px;
   }
 }
 
@@ -140,7 +140,7 @@ a.fa  {
   margin-right: 80px;
   background-color: black;
   color: azure;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -293,3 +293,122 @@ table{
 }
 
 
+.forumtextbox {
+  background-color: black;
+  text-align: center;
+}
+
+.ForumContent{
+  background-color: rgb(104, 104, 104);
+  padding: 15px 18px;
+  border-radius: 5px;
+}
+
+.comsec{
+  margin-left: 50px;
+}
+
+.welcomeforum li{
+  margin-left: 40px;
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.App button {
+  display: inline;
+  padding: 10px 20px;
+  border: none;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: rgb(54, 55, 56);
+  color: aliceblue;
+  cursor: pointer;
+
+}
+
+.App hr{
+  width: 100%;
+}
+
+.App input {
+  display: block;
+  width: 80%;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: rgb(167, 167, 167, 0);
+  color: aliceblue;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+/* comment wrapping */
+.comment {
+  max-width: 80%;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.post button{
+  padding: 5px;
+  border: none;
+  background-color: rgb(54, 55, 56);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/* buttons for the comment */
+.commentbox{
+  display: flex;
+  overflow: auto;
+}
+
+/* Add comment box */
+.input-box {
+  width: 80%;
+  box-sizing: border-box;
+  word-wrap: break-word; 
+  word-break: break-all; 
+  white-space: pre-wrap; 
+  overflow: hidden; 
+  resize: none; 
+  min-height: 50px; 
+  line-height: 1.5; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.username {
+  margin-top: 0;
+  border-radius: 5px;
+}
+
+.return button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.GOAT {
+  color: aliceblue;
+}
+
+video {
+  align-items: center;
+  display: block;
+  margin: 20px auto;
+}
